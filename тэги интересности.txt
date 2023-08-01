@@ -1,0 +1,12 @@
+<br>
+<pre>   текст</pre>
+<p>H<sub>2</sub>O</p>
+<p>m<sup>3</sup></p>
+<u>подчеркнутый текст</u>
+<code>let a = 5;</code>
+<s>зачеркнутый текст</s>
+The <abbr title="World Health Organization">WHO</abbr> was founded in 1948
+<p>Мой любимый цвет <del>Синий</del> <ins>Красного</ins>!</p>
+<p>
+To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.
+</p>
