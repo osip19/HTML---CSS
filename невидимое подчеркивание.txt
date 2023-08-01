@@ -1,0 +1,12 @@
+Один ИЗ способов: сделать подчёркивание невидимым.
+В Windows/Linux: File -> Preferences -> Settings (Файл -> Настройки -> Параметры)
+Далее, в строке поиска: workbench.colorCustomizations
+Жмём "Изменить в Setting.json"
+Вставляем правило:
+{
+    "workbench.colorCustomizations": {
+        "editorError.foreground":   "#00000000",
+        "editorWarning.foreground": "#00000000",
+        "editorInfo.foreground":    "#00000000"
+    }
+}
