@@ -1,1 +1,17 @@
-мроспропро
+body {
+	background-color: rgb(235, 235, 235);
+}
+
+P {
+	text-align: justify;
+}
+
+.images {
+	width: 50vw;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+

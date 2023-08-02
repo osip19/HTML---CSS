@@ -1,12 +1,20 @@
-<br>
-<pre>   текст</pre>
-<p>H<sub>2</sub>O</p>
-<p>m<sup>3</sup></p>
+<br>  == перенос строки
+<pre>   текст</pre>  == сохраняет форматирование (отступы, переносы и пр.)
+<p>H<sub>2</sub>O</p> == нижний регистр
+<p>m<sup>3</sup></p> == верхний регистр
 <u>подчеркнутый текст</u>
 <code>let a = 5;</code>
 <s>зачеркнутый текст</s>
-The <abbr title="World Health Organization">WHO</abbr> was founded in 1948
-<p>Мой любимый цвет <del>Синий</del> <ins>Красного</ins>!</p>
+The <abbr title="World Health Organization">WHO</abbr> was founded in 1948  == всплывающая подсказка аббревиатуры
+<p>Мой любимый цвет <del>Синий</del> <ins>Красного</ins>!</p>  == зачеркнутый и подчеркнутый
 <p>
-To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.
+To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.  == перенос наразрывного слово с разрывом в нужных местах
 </p>
+<figure>
+    <img src="orang-utan.jpg" alt="Малыш орангутанга свисает с каната.">
+    <figcaption>Орангутанг</figcaption>
+</figure> == связывает картинку и подпись
+<ol start="5">
+	<li>пункт</li>
+	<li>пункт</li>
+</ol> == таким образом нумерация в списке пойдет с 5
