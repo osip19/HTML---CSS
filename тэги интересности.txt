@@ -8,7 +8,7 @@
 The <abbr title="World Health Organization">WHO</abbr> was founded in 1948  == всплывающая подсказка аббревиатуры
 <p>Мой любимый цвет <del>Синий</del> <ins>Красного</ins>!</p>  == зачеркнутый и подчеркнутый
 <p>
-To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.  == перенос наразрывного слово с разрывом в нужных местах
+To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.  == перенос неразрывного слова с разрывом в нужных местах
 </p>
 <figure>
     <img src="orang-utan.jpg" alt="Малыш орангутанга свисает с каната.">
