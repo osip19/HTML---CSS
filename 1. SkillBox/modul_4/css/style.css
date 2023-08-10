@@ -62,7 +62,7 @@ li::marker {
 }
 
 .link-modules-indents__link:not(:last-child) {
-	mr-right: 25px;
+	margin-right: 25px;
 }
 
 .download-link {
