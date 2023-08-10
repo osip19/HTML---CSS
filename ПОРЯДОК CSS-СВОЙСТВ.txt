@@ -1,0 +1,65 @@
+*ПОРЯДОК CSS-СВОЙСТВ*
+
+SASS INHERITANCE (НАСЛЕДОВАНИЕ SASS)
+@extend	@mixin, e.g. clearfix
+
+GENERATED CONTENT
+content
+
+POSITION AND LAYOUT (ПОЗИЦИЯ И МАКЕТ)
+positiony
+z-index
+top
+bottom
+left
+right
+Flexbox properties
+float
+clear
+
+DISPLAY AND VISIBILITY (ОТОБРАЖЕНИЕ И ВИДИМОСТЬ)
+display
+opacity
+transform
+
+CLIPPING (ОБРЕЗКА)
+overflow
+clip
+
+ANIMATION
+animation
+transition
+
+BOX MODEL (FROM OUTSIDE IN)  (БЛОЧНАЯ МОДЕЛЬ)
+margin
+box-shadow
+border
+border-radius
+box-sizing
+width
+height
+padding
+
+BACKGROUND
+background
+cursor
+
+TYPOGRAPHY
+font-size
+line-height
+font-family
+font-weight
+font-style
+text-align
+text-transform
+word-spacing
+color
+
+PSEUDO-CLASSES & PSEUDO-ELEMENTS (NESTED RULES) (ПСЕВДОКЛАССЫ И ПСЕВДОЭЛЕМЕНТЫ (ВЛОЖЕННЫЕ ПРАВИЛА))
+:hover 
+:focus
+:active
+:before
+:after
+:first-child
+:last-child
