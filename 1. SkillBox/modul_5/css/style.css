@@ -198,13 +198,13 @@ li::marker {
 .container-modules {
 	max-width: 1170px;
 	margin: 0 auto;
+	padding: 0;
 }
 
 .logo-vector {
 	display: block;
 	margin-top: 50px;
 	margin-bottom: 25px;
-
 }
 
 .back-link {
@@ -226,18 +226,12 @@ li::marker {
 	margin-bottom: 50px;
 }
 
-.list-decorated {
+.card-list-item {
 	display: inline-block;
-	height: calc(325px + 180px);
-	width: 572px;
-	/* outline: auto; */
-	margin: 0;
-	list-style: none;
-	margin-block: 0;
-	padding-inline-start: 0.2em;
-	position: relative;
-	box-shadow: 0 0 10px #878787;
-	vertical-align: top;
+	padding: 0;
+}
+.card-list-item:not(:nth-child(odd)){
+	padding-right: 25px;
 }
 
 .first-card {
@@ -255,11 +249,13 @@ li::marker {
 .third-card {
 	background-image: url("../img/photo-3.jpg");
 	background-repeat: no-repeat;
+	margin-bottom: 25px;
 }
 
 .fourth-card {
 	background-image: url("../img/photo-4.jpg");
 	background-repeat: no-repeat;
+	margin-bottom: 25px;
 }
 
 .text-modules {
@@ -271,8 +267,14 @@ li::marker {
 	font-weight: 400;
 }
 
-.list-decorated:not(:nth-child(odd)) {
-	margin-right: 25px;
+.list-decorated {
+	display: inline-block;
+	height: calc(325px + 180px);
+	width: 572px;
+	list-style-type: none;
+	position: relative;
+	box-shadow: 0 0 10px #878787;
+	vertical-align: top;
 }
 
 .subtitle-list {
@@ -284,21 +286,16 @@ li::marker {
 	margin-bottom: 2px;
 }
 
-.card-item {
+.card-list__decorated-item {
 	color: #333;
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 165%;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 	margin-left: 25px;
 }
-
-.first-card__item {}
-
-.second-card__item {}
-
-.third-card__item {}
-
-.fourth-card__item {}
 
 .button {
 	border: 2px solid #3F2AFF;
@@ -308,6 +305,6 @@ li::marker {
 	color: #3F2AFF;
 	margin: 0 auto;
 	display: block;
-	margin-top: 50px;
+	margin-top: 25px;
 	margin-bottom: 50px;
 }
