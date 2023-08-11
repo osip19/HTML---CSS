@@ -237,6 +237,7 @@ li::marker {
 	padding-inline-start: 0.2em;
 	position: relative;
 	box-shadow: 0 0 10px #878787;
+	vertical-align: top;
 }
 
 .first-card {
