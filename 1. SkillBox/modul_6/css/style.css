@@ -1,3 +1,218 @@
+/* personal properties */
+
+html {
+	font-size: 0;
+}
+
+body {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+strong {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0;
+	outline: #66ffff dashed 1px;
+}
+
+/* personal properties end */
+
+.heading {}
+
+.header-flex {}
+
+.container {}
+
+.over-header {
+	align-items: center;
+}
+
+.header-logo {}
+
+.header-logo-img {}
+
+.header-flex-list {}
+
+.header-flex-item {}
+
+.tel {
+	margin-left: 50px;
+}
+
+.account {
+	margin-left: auto;
+	background-image: url("../img/keyboard-tab.svg");
+	background-repeat: no-repeat;
+	background-position: center left;
+	padding-left: 29px;
+}
+
+.header-nav {
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.breadcrumbs {}
+
+.breadcrumbs-item:not(:first-child) {
+	margin-left: 45px;
+}
+
+.breadcrumbs-item-link {}
+
+.feedback {}
+
+.feedback-btn {}
+
+.feedback-tour {}
+
+.feedback-call {
+	margin-left: 40px;
+}
+
+.main {}
+
 .main-title {
 	display: none;
 }
+
+.offers {
+	margin-top: 70px;
+}
+
+.offers-content {}
+
+.section-title {}
+
+.offers-content-title {}
+
+.offers-item {
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.offers-items-flex {
+	/* flex-wrap: wrap; */
+	flex-direction: column;
+}
+
+.offers-item-list {}
+
+.offers-item-title {}
+
+.offers-item-descr {}
+
+.offers-item-link {}
+
+.list-item-card-1 {
+	/* min-height: 258px; */
+	/* background-image: url("../img/card-image-1.jpg"); */
+	/* background-size: cover; */
+	/* object-fit: cover */
+}
+
+.list-item-card-2 {
+	/* min-height: 258px;
+	background-image: url("../img/card-image-2.jpg");
+	background-size: cover;
+	object-fit: cover */
+}
+
+.list-item-card-3 {
+	/* background-image: url("../img/card-image-3.jpg");
+	background-size: cover;
+	object-fit: cover */
+}
+
+.about-us {
+	margin-top: 70px;
+}
+
+.about-us-content-title {}
+
+.about-us-descr {}
+
+.services {}
+
+.serveces-title {}
+
+.services-items {}
+
+.services-item {}
+
+.services-item-title {}
+
+.services-item-descr {}
+
+.advantages {}
+
+.advantages-title {}
+
+.advantages-list {}
+
+.advantages-item {}
+
+.advdntages-item-icon {}
+
+.advantages-text {}
+
+.placement {}
+
+.placement-title {}
+
+.placement-list {}
+
+.placement-item {}
+
+.price {}
+
+.hotel-rating {}
+
+.rating {}
+
+.placement-descr {}
+
+.hotel-room {}
+
+.all-options {}
+
+.footer {}
