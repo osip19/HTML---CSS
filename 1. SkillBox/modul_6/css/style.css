@@ -199,7 +199,8 @@ button {
 	flex-direction: column;
 	max-width: 276px;
 	min-height: 276px;
-	/* outline: 1px dotted black; */
+	outline: 1px dotted black;
+	
 }
 
 .advantages-item:nth-child(-n+4) {
@@ -251,9 +252,10 @@ button {
 	background-repeat: no-repeat;
 }
 
-.sample-hotel{
+.sample-hotel {
 	visibility: hidden;
 }
+
 .placement-item:not(:nth-child(3n)) {
 	margin-right: 24px;
 }
