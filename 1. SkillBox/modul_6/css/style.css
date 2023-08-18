@@ -27,7 +27,9 @@ button {
 
 .header-logo {}
 
-.header-logo-img {}
+.header-logo-img {
+	min-width: 261px;
+}
 
 .tel {
 	margin-right: 550px;
@@ -48,6 +50,7 @@ button {
 
 .breadcrumbs {
 	display: flex;
+	flex-wrap: wrap;
 	padding-left: 45px;
 }
 
@@ -75,7 +78,7 @@ button {
 	display: none;
 }
 
-.section:not(:last-child) {
+.section {
 	margin-bottom: 70px;
 }
 
@@ -199,8 +202,8 @@ button {
 	flex-direction: column;
 	max-width: 276px;
 	min-height: 276px;
-	outline: 1px dotted black;
-	
+	/* outline: 1px dotted black; */
+
 }
 
 .advantages-item:nth-child(-n+4) {
@@ -220,9 +223,7 @@ button {
 
 .placement {}
 
-.placement-title {
-	margin-bottom: 16px;
-}
+.placement-title {}
 
 .placement-list {
 	display: flex;
@@ -232,6 +233,7 @@ button {
 .placement-item {
 	max-width: 374px;
 	/* outline: 1px dotted black; */
+	margin-bottom: 24px;
 }
 
 .price-descr {
@@ -256,13 +258,16 @@ button {
 	visibility: hidden;
 }
 
+.placement-item:not(:nth-child(-n+6)) {
+	margin-bottom: 0;
+}
+
 .placement-item:not(:nth-child(3n)) {
 	margin-right: 24px;
 }
 
-.placement-item:nth-child(-n+6) {
-	margin-bottom: 24px;
-}
+
+
 
 .price {
 	margin-right: 53px;
