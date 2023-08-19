@@ -319,7 +319,7 @@ body {
 }
 
 .clients {
-border-bottom: 1px solid #DADADA;
+	border-bottom: 1px solid #DADADA;
 }
 
 .clients-title {}
@@ -389,6 +389,11 @@ border-bottom: 1px solid #DADADA;
 	line-height: 180%;
 }
 
+
+.contacts {
+	border-bottom: 1px solid #c4c4c4;
+}
+
 .contacts-list {}
 
 .contacts-address {
@@ -398,7 +403,22 @@ border-bottom: 1px solid #DADADA;
 .contacts-item {
 	flex-direction: column;
 	width: 370px;
-	outline: auto;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 29px 29px;
+	padding-top: 48px;
+}
+
+.contacts-icon-location {
+	background-image: url("../img/location.svg");
+}
+
+.contacts-icon-phone {
+	background-image: url("../img/phone.svg");
+}
+
+.contacts-icon-mail {
+	background-image: url("../img/mail.svg");
 }
 
 .contacts-item:not(:nth-child(3n)) {
@@ -407,15 +427,28 @@ border-bottom: 1px solid #DADADA;
 
 .contacts-item-caption {
 	margin-bottom: 30px;
+	color: #1C1C1C;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 180%;
 }
 
 .contacts-item-text {
 	margin: 0;
+	width: 214px;
+	color: #787878;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 180%;
 }
 
-.contacts-item-link:not(:last-child) {
-	margin-bottom: 5px;
+.contacts-item-link {
+	color: #787878;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 180%;
 }
+
 
 .footer {
 	padding: 42px 0;
@@ -435,28 +468,54 @@ border-bottom: 1px solid #DADADA;
 	margin-right: 25px;
 }
 
-.footer-copy {}
+.footer-copy {
+	color: #787878;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: normal;
+}
 
 
-.footer-nav {}
+.footer-nav {
+	margin-right: 56px;
+}
 
 .footer-list {}
 
 .footer-item:not(:last-child) {
 	margin-right: 28px;
-
 }
 
-.footer-link {}
+.footer-link {
+	color: #787878;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: normal;
+}
 
 .social {}
 
-.social-item {}
+.social-item:not(:last-child) {
+	margin-right: 32px;
+}
 
-.social-link {}
+.social-link {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 
-.social-link-tw {}
+.social-link-tw {
+	background-image: url("../img/twitter.svg");
+}
 
-.social-link-linkedin {}
+.social-link-linkedin {
+	background-image: url("../img/linkedin.svg");
+}
 
-.social-link-mail {}
+.social-link-mail {
+	background-image: url("../img/mail-to.svg");
+}
