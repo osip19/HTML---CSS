@@ -5,6 +5,7 @@ button {
 	cursor: pointer;
 }
 
+
 .heading {}
 
 .container {
@@ -33,6 +34,10 @@ button {
 
 .tel {
 	margin-right: 550px;
+	color: #666;
+	font-family: Muller;
+	font-size: 20px;
+	font-weight: 500;
 }
 
 .account {
