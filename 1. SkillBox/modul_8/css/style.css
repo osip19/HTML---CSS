@@ -6,8 +6,6 @@ body {
 	line-height: normal;
 }
 
-
-
 @font-face {
 	font-family: "Muller";
 	src: local('MullerRegular'), url(../fonts/MullerRegular.woff2) format("woff2");
@@ -57,7 +55,6 @@ button {
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
-	/* outline: 1px dashed #55ffff; */
 }
 
 .over-header {
@@ -166,9 +163,7 @@ button {
 	display: flex;
 }
 
-.offers-card-items {
-	margin-right: 24px;
-}
+.offers-card-items {}
 
 .offers-item-list {
 	min-width: 573px;
@@ -177,37 +172,30 @@ button {
 	overflow: hidden;
 }
 
-
-
-.list-item-descr {
-	padding-top: 40px;
-	padding-left: 45px;
-}
-
-.list-item-descr-1 {}
-
 .list-item-card-1 {
 	margin-bottom: 24px;
 	background-image: url("../img/card-image-1.jpg");
 	background-repeat: no-repeat;
-	object-fit: cover;
+	background-size: cover;
+
 }
 
 .list-item-card-2 {
 	background-image: url("../img/card-image-2.jpg");
 	background-repeat: no-repeat;
-	object-fit: cover;
+	background-size: cover;
 }
 
 .list-item-card-3 {
 	background-image: url("../img/card-image-3.jpg");
 	background-repeat: no-repeat;
-	object-fit: cover;
+	background-size: cover;
 }
 
-.list-item-card-3 .list-item-descr {
-	padding-top: 212px;
-
+.list-item-descr {
+	display: flex;
+	flex-direction: column;
+	margin-right: 24px;
 }
 
 .offers-item-title {
@@ -216,6 +204,30 @@ button {
 	font-size: 40px;
 	font-weight: 700;
 	max-width: 420px;
+}
+
+.offers-item-list__right .offers-item-title {
+	color: #FFF;
+	font-family: Muller;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.offers-item-list__right .offers-item-descr {
+	color: #FFF;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.offers-descr {
+	margin-top: 40px;
+	margin-left: 45px;
+}
+
+.offers-item-list__right .offers-descr {
+	margin-top: 212px;
 }
 
 .offers-item-descr {
@@ -270,8 +282,6 @@ button {
 	background-color: #fff;
 }
 
-
-
 .services-item-img {
 	margin-bottom: 26px;
 }
@@ -280,7 +290,6 @@ button {
 .services-item:nth-child(2) {
 	margin-bottom: 24px;
 }
-
 
 .services-item-title {
 	margin-bottom: 10px;
@@ -370,7 +379,6 @@ button {
 
 .placement-item {
 	max-width: 374px;
-	/* outline: 1px dotted black; */
 	margin-bottom: 24px;
 }
 
@@ -386,6 +394,7 @@ button {
 }
 
 .placement-item-9 {
+	display: flex;
 	position: relative;
 	background-image: url("../img/placement-9.jpg");
 	min-width: 374px;
@@ -408,9 +417,6 @@ button {
 .placement-item:not(:nth-child(3n)) {
 	margin-right: 24px;
 }
-
-
-
 
 .price {
 	margin-right: 52px;
@@ -451,11 +457,9 @@ button {
 
 .all-options {
 	display: inline-block;
-	position: absolute;
-	bottom: 27px;
-	margin: 0;
+	align-self: flex-end;
 	padding-left: 54px;
-	padding-right: 20px;
+	padding-right: 22px;
 	color: #FFF;
 	font-size: 20px;
 	font-weight: 500;
@@ -463,6 +467,7 @@ button {
 	background-image: url("../img/rectangle-2.svg");
 	background-repeat: no-repeat;
 	background-position: right center;
+	margin-bottom: 27px;
 }
 
 .footer {}

@@ -1,0 +1,43 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.serveces-title {}
+
+.services {
+	outline: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.list {
+	list-style-type: none;
+}
+
+.services-item-left {
+	outline: auto red;
+	width: 573px;
+	min-height: 258px;
+}
+
+.services-item-right {
+	outline: auto red;
+	width: 573px;
+	min-height: 258px;
+}
+
+.list-left {}
+
+.item {}
+
+.title {}
+
+.price {}
+
+.link {}
