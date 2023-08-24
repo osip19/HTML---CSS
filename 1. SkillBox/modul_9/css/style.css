@@ -141,6 +141,7 @@ button {
 
 .main-title {
 	display: none;
+	/* добавил самостоятельно, в макете не просматривается */
 }
 
 .section {
@@ -294,7 +295,6 @@ button {
 .services-item-title {
 	margin-bottom: 10px;
 	margin-left: 45px;
-	/* добавил самостоятельно, в макете не просматривается */
 	color: #cc9933;
 	font-size: 20px;
 	font-weight: 500;
@@ -470,111 +470,92 @@ button {
 	margin-bottom: 27px;
 }
 
-.container {}
-
-.section-title {}
-
-.booking-fieldset {}
-
-.booking-form {
-
-	display: flex;
+.booking .container {
+	padding-top: 45px;
+	height: 256px;
+	border-radius: 15px;
+	background: #E9E9E9;
+	padding-left: 45px;
+	padding-right: 45px;
 }
+
+.booking {}
+
+.legend {
+	margin-bottom: 20px;
+	color: #000;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.booking-form {}
 
 .form {}
 
-.booking-fieldset-item {}
-
-.booking-legend {}
-
-.booking-select {}
-
-.booking-value {}
-
-.booking-input {}
-
-.booking-input-night {}
-
-.booking-input-person {}
-
-.btn {}
-
-.button-reset {}
-
-.booking-button {}
-
-.footer {}
-/* 
-
-
-
-.booking .container {
-	border-radius: 15px;
-	background: #E9E9E9;
-	height: 256px;
-	padding: 45px;
-}
-
 .booking-fieldset {
+	display: flex;
 	border-radius: 15px;
 	background: #FFF;
+	padding: 32px 28px;
 }
 
-.form {
-	display: flex;
-	justify-content: space-between;
-}
-
-.booking-form {
-	height: 106px;
-}
-
-.booking-fieldset-item {
+.booking-fieldset-item * {
 	width: 165px;
-	padding-left: 28px;
+}
+
+.booking-input-night * {
+	width: 121px;
+}
+.booking-input-night {
+	width: 121px;
+	margin-right: 41px;
+}
+
+.booking-input-person * {
+	width: 121px;
+}
+.booking-input-person {
+	width: 121px;
+	margin-right: 51px;
+}
+
+.booking-fieldset-item:not(:last-child) {
+	margin-right: 41px;
+}
+.booking-fieldset-item-date{
+	width: 121px;
+}
+.booking-fieldset-item-date *{
+	width: 121px;
 }
 
 .booking-legend {
+	margin-bottom: 15px;
 	color: #000;
 	font-size: 12px;
 	font-weight: 400;
-	padding-bottom: 15px;
-	padding-top: 31px;
 }
 
 .booking-select {
 	color: #000;
 	font-size: 16px;
 	font-weight: 400;
-	width: 165px;
-	margin-left: -4px;
 }
-
-.booking-select {}
 
 .booking-value {}
 
-.booking-input {}
-
-.booking-input-night {
+.booking-input {
 	border-bottom: 1px solid #E9E9E9;
-	/* width: 121px; */
-	padding-right: 41px;
+	;
 }
-
-.booking-input-person {
-	border-bottom: 1px solid #E9E9E9;
-	/* width: 121px; */
-}
-
 
 .booking-button {
+	padding: 13px 30px;
 	border-radius: 10px;
 	border: 1px solid #C93;
-	padding: 13px 30px;
 	color: #C93;
 	font-size: 16px;
 	font-weight: 400;
-	margin: 32px;
-	margin-right: 28px;
-} */
+}
+
+.footer {}
