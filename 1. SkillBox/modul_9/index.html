@@ -11,7 +11,7 @@
 
 <body>
 
-	<header class="heading">
+	<!-- <header class="heading">
 
 		<div class="container">
 
@@ -104,12 +104,12 @@
 
 		</div>
 
-	</header>
+	</header> -->
 
 
 	<main class="main">
 
-		<h1 class="main-title">
+		<!-- <h1 class="main-title">
 			Main title
 		</h1>
 
@@ -1089,6 +1089,46 @@
 
 				</ul>
 
+			</div>
+
+	</section> -->
+
+		<section class="section booking">
+			<div class="container">
+				<h2 class="section-title">
+					Хочу тур
+				</h2>
+				<fieldset class="booking-fieldset">
+					<div class="booking-form">
+						<form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+							<div class="booking-fieldset-item">
+								<legend class="booking-legend">Город вылета</legend>
+								<select class="booking-select" name="city">
+									<option class="booking-value" value="Санкт-Петербург">Санкт-Петербург</option>
+								</select>
+							</div>
+							<div class="booking-fieldset-item">
+								<legend class="booking-legend">Страна</legend>
+								<select class="booking-select" name="country">
+									<option class="booking-value" value="Австралия">Австралия</option>
+								</select>
+							</div>
+							<div class="booking-fieldset-item">
+								<legend class="booking-legend">Дата прибытия</legend>
+								<input class="booking-input" type="date" value="2021-10-18" min="2021-10-18">
+							</div>
+							<div class="booking-fieldset-item">
+								<legend class="booking-legend">Ночей</legend>
+								<input class="booking-input booking-input-night " type="number" min="1" value="6">
+							</div>
+							<div class="booking-fieldset-item">
+								<legend class="booking-legend ">Туристы</legend>
+								<input class="booking-input booking-input-person" type="number" min="1" value="2">
+							</div>
+							<button class="btn button-reset booking-button">Найти</button>
+						</form>
+					</div>
+				</fieldset>
 			</div>
 
 		</section>
