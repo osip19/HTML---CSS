@@ -306,11 +306,6 @@ button {
 	background-image: url("../img/rectangle.svg");
 	background-repeat: no-repeat;
 	background-position: center right;
-	padding-right: 22px;
-	color: #C93;
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 200%;
 }
 
 .services-item-descr {
@@ -506,6 +501,7 @@ button {
 .booking-input-night * {
 	width: 121px;
 }
+
 .booking-input-night {
 	width: 121px;
 	margin-right: 41px;
@@ -514,6 +510,7 @@ button {
 .booking-input-person * {
 	width: 121px;
 }
+
 .booking-input-person {
 	width: 121px;
 	margin-right: 51px;
@@ -522,14 +519,17 @@ button {
 .booking-fieldset-item:not(:last-child) {
 	margin-right: 41px;
 }
-.booking-fieldset-item-date{
+
+.booking-fieldset-item-date {
 	width: 121px;
 }
-.booking-fieldset-item-date *{
+
+.booking-fieldset-item-date * {
 	width: 121px;
 }
 
 .booking-legend {
+	display: block;
 	margin-bottom: 15px;
 	color: #000;
 	font-size: 12px;
@@ -546,7 +546,6 @@ button {
 
 .booking-input {
 	border-bottom: 1px solid #E9E9E9;
-	;
 }
 
 .booking-button {
@@ -559,3 +558,100 @@ button {
 }
 
 .footer {}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	border-radius: 15px;
+	background: #333;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 45px;
+	overflow: hidden;
+}
+
+.footer-img {}
+
+.footer-descr{
+}
+
+.footer-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 302px;
+}
+
+.footer-img {
+	display: none;
+}
+
+.footer-info__agreement {
+	color: #C93;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.footer-contact {
+	display: flex;
+	flex-direction: column;
+	max-width: 359px;
+
+}
+
+.footer-info__text {
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 190%;
+}
+
+.footer-info__tel {
+	color: #C93;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.footer-info__mail {
+	color: #C93;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.footer-info-link:not(:last-child){
+margin-bottom: 20px;
+}
+
+.footer-social {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-info__tripadvisor {
+	background: url("../img/tripadvisor.png");
+	display: block;
+	width: 25px;
+	height: 25px;
+}
+
+
+.footer-info__ok {
+	background: url("../img/ok.png");
+	display: block;
+	width: 25px;
+	height: 25px;
+}
+
+.footer-info__vk {
+	background: url("../img/vk.png");
+	display: block;
+	width: 25px;
+	height: 25px;
+}
+
+* {
+	outline: 1px dotted red;
+}
