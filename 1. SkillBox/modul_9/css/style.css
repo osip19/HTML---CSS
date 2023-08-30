@@ -477,6 +477,7 @@ button {
 .booking {}
 
 .legend {
+	display: block;
 	margin-bottom: 20px;
 	color: #000;
 	font-size: 40px;
