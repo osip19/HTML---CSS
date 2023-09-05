@@ -477,7 +477,6 @@ button {
 .booking {}
 
 .legend {
-	display: block;
 	margin-bottom: 20px;
 	color: #000;
 	font-size: 40px;
@@ -541,6 +540,10 @@ button {
 	color: #000;
 	font-size: 16px;
 	font-weight: 400;
+	appearance: none;
+	background-image: url(../img/selection-arrow.svg);
+	background-repeat: no-repeat;
+	background-position: center right;
 }
 
 .booking-value {}

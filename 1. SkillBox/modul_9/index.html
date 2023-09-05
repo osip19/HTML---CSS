@@ -1096,9 +1096,9 @@
 
 			<div class="container">
 
-				<label class="legend">
+				<h2 class="legend">
 					Хочу тур
-				</label>
+				</h2>
 
 				<div class="booking-form">
 
@@ -1108,9 +1108,9 @@
 
 							<div class="booking-fieldset-item">
 
-								<label class="booking-legend">Город вылета</label>
+								<label for="city" class="booking-legend">Город вылета</label>
 
-								<select class="booking-select" name="city">
+								<select id="city" class="booking-select" name="city">
 
 									<option class="booking-value" value="Санкт-Петербург">Санкт-Петербург</option>
 
@@ -1120,9 +1120,9 @@
 
 							<div class="booking-fieldset-item">
 
-								<label class="booking-legend">Страна</label>
+								<label for="country" class="booking-legend">Страна</label>
 
-								<select class="booking-select" name="country">
+								<select id="country" class="booking-select" name="country">
 
 									<option class="booking-value" value="Австралия">Австралия</option>
 
@@ -1132,25 +1132,25 @@
 
 							<div class="booking-fieldset-item booking-fieldset-item-date">
 
-								<label class="booking-legend">Дата прибытия</label>
+								<label for="date" class="booking-legend">Дата прибытия</label>
 
-								<input class="booking-input-date" type="date" name="date" value="2021-10-18" min="2021-10-18">
+								<input id="date" class="booking-input-date" type="date" name="date" value="2021-10-18" min="2021-10-18">
 
 							</div>
 
 							<div class="booking-input-night">
 
-								<label class="booking-legend">Ночей</label>
+								<label for="night" class="booking-legend">Ночей</label>
 
-								<input class="booking-input" type="number" name="night" min="1" value="6">
+								<input id="night" class="booking-input" type="number" name="night" min="1" value="6">
 
 							</div>
 
 							<div class="booking-input-person">
 
-								<label class="booking-legend ">Туристы</label>
+								<label for="person" class="booking-legend ">Туристы</label>
 
-								<input class="booking-input" type="number" name="person" min="1" value="2">
+								<input id="person" class="booking-input" type="number" name="person" min="1" value="2">
 
 							</div>
 
@@ -1167,115 +1167,74 @@
 		</section>
 
 		<section id="contacts" class="section section-contacts">
-
 			<div class="container">
-
 				<h2 class="section-title">
 					Контакты
 				</h2>
-
 				<div class="contacts-requisites">
-
 					<address class="address-contact">
-
 						<ul class="contacts-requisites-list">
-
 							<li class="address-items">
-
 								<ul class="address">
-
 									<li class="address-title">
 										Адрес
 									</li>
-
 									<li class="address-descr">
 										Москва, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
 									</li>
-
 								</ul>
-
 								<ul class="phones">
-
 									<li class="phones-title">
 										Телефоны
 									</li>
-
-									<div class="contacts-phone-block">
-
-										<li class="phones-item">
-
-											<a class="contacts-link-phone" href="tel:+74995356434">+7 499 535-64-34</a>
-
-										</li>
-
-										<li class="phones-item">
-
-											<a class="contacts-link-phone" href="tel:+74950050544">+7 495 005-05-44</a>
-
-										</li>
-
-									</div>
-
+									<li class="contacts-phone-block">
+										<ul class="replacing-block-non-styl">
+											<li class="phones-item">
+												<a class="contacts-link-phone" href="tel:+74995356434">+7 499 535-64-34</a>
+											</li>
+											<li class="phones-item">
+												<a class="contacts-link-phone" href="tel:+74950050544">+7 495 005-05-44</a>
+											</li>
+										</ul>
+									</li>
 								</ul>
-
 								<ul class="emails">
-
 									<li class="emails-title">
 										Email
 									</li>
-
-									<div class="contacts-emails-block">
-
-										<li class="emails-item">
-
-											<a class="contacts-link-mail" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
-
-										</li>
-
-										<li class="emails-descr">
-											по вопросам бронирования
-										</li>
-
-										<li class="emails-item">
-
-											<a class="contacts-link-mail" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
-
-										</li>
-
-										<li class="emails-descr">
-											по вопросам сотрудничества
-										</li>
-
-									</div>
-
+									<li class="contacts-emails-block">
+										<ul class="replacing-block-non-styl">
+											<li class="emails-item">
+												<a class="contacts-link-mail" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+											</li>
+											<li class="emails-descr">
+												по вопросам бронирования
+											</li>
+											<li class="emails-item">
+												<a class="contacts-link-mail" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+											</li>
+											<li class="emails-descr">
+												по вопросам сотрудничества
+											</li>
+										</ul>
+									</li>
 								</ul>
-
 								<ul class="chart">
-
 									<li class="chart-title">
 										График
 									</li>
-
 									<li class="chart-descr">
 										Понедельник-пятница, с&nbsp;10:00 до&nbsp;19:00
 									</li>
-
 								</ul>
-
 							</li>
-
 						</ul>
-
 						<button class="contacts-button">
 							Построить маршрут
 						</button>
-
 					</address>
-
 				</div>
-
 			</div>
-
 		</section>
 
 		<footer class="footer">
@@ -1284,7 +1243,8 @@
 
 				<div class="footer-descr footer-info">
 
-					<p class="footer-info__text">&copy;&nbsp;2012&ndash;2020 Управляющая компания Объединённой сети &laquo;Лагуна
+					<p class="footer-info__text">&copy;&nbsp;2012&ndash;2020 Управляющая компания Объединённой сети
+						&laquo;Лагуна
 						Хотелс&raquo;
 					</p>
 
@@ -1300,9 +1260,9 @@
 
 					<p class="footer-info__text">11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2</p>
 
-					<a class="footer-info__tel" type="tel" href="tel:+74995356434">+7 499 535-64-34</a>
+					<a class="footer-info__tel" href="tel:+74995356434">+7 499 535-64-34</a>
 
-					<a class="footer-info__tel" type="tel" href="tel:+74950050544">+7 495 005-05-44</a>
+					<a class="footer-info__tel" href="tel:+74950050544">+7 495 005-05-44</a>
 
 					<a class="footer-info__mail" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
 
