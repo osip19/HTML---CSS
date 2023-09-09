@@ -1,0 +1,10 @@
+ol {
+	counter-reset: section;
+	list-style: none;
+}
+
+li::before {
+	counter-increment: section;
+	content: "0" counter(section) ": ";
+}
+
