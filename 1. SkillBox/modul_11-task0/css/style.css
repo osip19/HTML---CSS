@@ -76,7 +76,7 @@ body {
 	background-color: #fff;
 }
 
-.header-container {
+.header__container {
 	align-items: center;
 }
 
@@ -87,37 +87,48 @@ body {
 }
 
 
-.header-logo {
+.header__logo {
 	margin-right: auto;
 }
 
-.header-nav {
-	margin-right: 52px;
-}
-
-.header-list {}
-
-.header-list-item:not(:last-child) {
-	margin-right: 52px;
-}
-
-.header-link {
-	position: relative;
-	font-weight: 600;
-	color: #1c1c1c;
-	font-size: 15px;
-}
-
-btn .header-link:focus-visible {
+.header__logo:focus-visible {
 	outline: 1px solid #71A7E2;
 	outline-offset: 2px;
 }
 
-.header-link:hover:not(:focus-visible) {
+.header__nav {
+	margin-right: 52px;
+}
+
+.nav__list {}
+
+.nav__item:not(:last-child) {
+	margin-right: 52px;
+}
+
+btn .nav__link:focus-visible {
+	outline: 1px solid #71A7E2;
+	outline-offset: 2px;
+}
+
+.nav__link:focus-visible {
+	outline: 1px solid #71A7E2;
+	outline-offset: 2px;
+}
+
+.nav__link {
+	position: relative;
+	font-weight: 600;
+	color: #1c1c1c;
+	font-size: 15px;
+	transition: color .3s ease-in-out;
+}
+
+.nav__link:hover:not(:focus-visible) {
 	color: #71A7E2;
 }
 
-.header-link::after {
+.nav__link::after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -128,12 +139,12 @@ btn .header-link:focus-visible {
 	opacity: 0;
 }
 
-.header-link:active {
+.nav__link:active {
 	color: #3172B9;
 	outline: none;
 }
 
-.header-link:active::after {
+.nav__link:active::after {
 	opacity: 1;
 }
 
@@ -147,6 +158,7 @@ btn .header-link:focus-visible {
 	background-color: #3172b9;
 	color: #fff;
 	border-radius: 3px;
+	transition: background-color .2s ease-in-out;
 }
 
 .btn::after {
@@ -178,7 +190,7 @@ btn .header-link:focus-visible {
 	opacity: 0;
 }
 
-.header-btn {}
+.header__btn {}
 
 .main {}
 
@@ -191,13 +203,13 @@ btn .header-link:focus-visible {
 	background-position: center;
 }
 
-.hero-content {
+.hero__content {
 	max-width: 50%;
 	flex-direction: column;
 	align-items: flex-start;
 }
 
-.hero-title {
+.hero__title {
 	margin: 0;
 	margin-bottom: 25px;
 	font-size: 40px;
@@ -206,7 +218,7 @@ btn .header-link:focus-visible {
 	color: #1C1C1C;
 }
 
-.hero-descr {
+.hero__descr {
 	margin: 0;
 	margin-bottom: 34px;
 	font-size: 16px;
@@ -216,7 +228,7 @@ btn .header-link:focus-visible {
 	color: #787878;
 }
 
-.hero-btn {
+.hero__btn {
 	margin-bottom: 14px;
 	min-width: 250px;
 	padding-top: 20px;
@@ -224,13 +236,13 @@ btn .header-link:focus-visible {
 	margin-bottom: 14px;
 }
 
-.hero-wrapper {
+.hero__wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.hero-secure {
+.hero__secure {
 	background-image: url(../img/secure.svg);
 	background-repeat: no-repeat;
 	background-position: center left;
@@ -257,7 +269,7 @@ btn .header-link:focus-visible {
 
 }
 
-.serveces-title {
+.serveces__title {
 	text-align: center;
 }
 
@@ -272,7 +284,7 @@ btn .header-link:focus-visible {
 	padding-bottom: 160px;
 }
 
-.services-descr {
+.services__descr {
 	text-align: center;
 	color: #787878;
 	font-size: 16px;
@@ -282,33 +294,35 @@ btn .header-link:focus-visible {
 
 .services-items {}
 
-.services-item {
+.services__item {
 	flex-direction: column;
 	align-items: center;
 	padding: 60px 30px;
 	width: 270px;
 	border-radius: 5px;
 	border: 1px solid #E4E4E4;
+	transition: background-color .3s ease-in-out;
 }
 
-.services-item:hover {
+.services__item:hover {
 	border-color: #3172B9;
 	background-color: #3172B9;
 }
 
-.services-item:not(:nth-child(4n)) {
+.services__item:not(:nth-child(4n)) {
 	margin-right: 30px;
 }
 
-.services-item-icon {
+.services__icon {
 	margin-bottom: 25px;
 }
 
-.services-item-icon path {
+.services__icon path {
 	fill: #3172B9;
+	transition: fill .3s ease-in-out;
 }
 
-.services-item-title {
+.services__title {
 	margin: 0;
 	margin-bottom: 15px;
 	color: #1C1C1C;
@@ -316,22 +330,23 @@ btn .header-link:focus-visible {
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 130%;
+	transition: color .3s ease-in-out;
 }
 
-.services-item:hover .services-item-title {
+.services__item:hover .services__title {
 	color: #fff;
 }
 
-.services-item:hover .services-item-descr {
+.services__item:hover .services__descr {
 	color: #fff;
 }
 
-.services-item:hover .services-item-icon path {
+.services__item:hover .services__icon path {
 	fill: #fff;
 }
 
 
-.services-item-descr {
+.services__descr {
 	margin-top: 10px;
 	text-align: center;
 	color: #787878;
@@ -339,6 +354,7 @@ btn .header-link:focus-visible {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 150%;
+	transition: color .3s ease-in-out;
 }
 
 .articles {
@@ -368,6 +384,7 @@ btn .header-link:focus-visible {
 	display: flex;
 	position: relative;
 	width: 100%;
+	transition: background-color .3s ease-in-out;
 }
 
 .blog-preview-link:focus {
@@ -421,6 +438,7 @@ btn .header-link:focus-visible {
 	font-size: 10px;
 	font-weight: 400;
 	line-height: 150%;
+	transition: color .3s ease-in-out;
 }
 
 .blog-preview-title {
@@ -430,6 +448,7 @@ btn .header-link:focus-visible {
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 130%;
+	transition: color .3s ease-in-out;
 }
 
 .blog-preview-descr {
@@ -439,6 +458,7 @@ btn .header-link:focus-visible {
 	font-weight: 400;
 	line-height: 150%;
 	max-width: 210px;
+	transition: color .3s ease-in-out;
 }
 
 .clients {
@@ -570,6 +590,7 @@ btn .header-link:focus-visible {
 	color: #787878;
 	font-size: 14px;
 	line-height: 180%;
+	transition: color .3s ease-in-out;
 }
 
 
@@ -636,7 +657,7 @@ btn .header-link:focus-visible {
 	padding: 16px 28px;
 	width: 251px;
 	height: 60px;
-
+	transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
 .form-input:focus {
@@ -688,7 +709,7 @@ btn .header-link:focus-visible {
 	padding: 16px 28px;
 	width: 251px;
 	height: 60px;
-
+	transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
 .form-input:nth-child(-n+2) {
@@ -703,6 +724,7 @@ btn .header-link:focus-visible {
 	padding: 16px 28px;
 	width: 100%;
 	height: 100%;
+	transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
 .form-bottom {
@@ -731,6 +753,16 @@ btn .header-link:focus-visible {
 	font-weight: 400;
 }
 
+.checkbox:focus-visible {
+	outline: 1px solid #71A7E2;
+	outline-offset: 2px;
+}
+
+.user-agreement:focus-visible {
+	outline: 1px solid #71A7E2;
+	outline-offset: 2px;
+}
+
 .form-check input {
 	margin-right: 8px;
 }
@@ -746,6 +778,38 @@ btn .header-link:focus-visible {
 	padding: 42px 0;
 }
 
+.footer-link {
+	position: relative;
+	font-weight: 600;
+	color: #1c1c1c;
+	font-size: 15px;
+	transition: color .3s ease-in-out;
+}
+
+.footer-link:hover:not(:focus-visible) {
+	color: #71A7E2;
+}
+
+.footer-link::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #3474BA;
+	opacity: 0;
+}
+
+.footer-link:active {
+	color: #3172B9;
+	outline: none;
+}
+
+.footer-link:active::after {
+	opacity: 1;
+}
+
 .footer-container {
 	align-items: center;
 	justify-content: space-between;
@@ -758,6 +822,11 @@ btn .header-link:focus-visible {
 
 .footer-logo {
 	margin-right: 25px;
+}
+
+.footer-logo:focus-visible {
+	outline: 1px solid #71A7E2;
+	outline-offset: 2px;
 }
 
 .footer-copy {
@@ -784,6 +853,11 @@ btn .header-link:focus-visible {
 	line-height: normal;
 }
 
+.footer-link:focus-visible {
+	outline: 1px solid #71A7E2;
+	outline-offset: 2px;
+}
+
 .social {}
 
 .social-item:not(:last-child) {
@@ -800,35 +874,38 @@ btn .header-link:focus-visible {
 
 .social-link svg {
 	fill: #000;
+	transition: fill .3s ease-in-out, stroke .3s ease-in-out;
 }
 
 .social-link-tw {}
 
 .social-link-linkedin {}
 
-.social-link-mail svg{
-fill: transparent;
-stroke: #000;
+.social-link-mail svg {
+	fill: transparent;
+	stroke: #000;
 }
 
-.social-link:focus{
+.social-link:focus {
 	outline-offset: 2px;
 	outline: 1px solid #71A7E2;
 }
-.social-link:hover svg{
-fill: #71A7E2;
+
+.social-link:hover svg {
+	fill: #71A7E2;
 }
 
-.social-link-mail:hover svg{
+.social-link-mail:hover svg {
 	fill: transparent;
 	stroke: #71A7E2;
 }
-.social-link:active svg{
+
+.social-link:active svg {
 	outline: none;
-fill: #3172B9;
+	fill: #3172B9;
 }
 
-.social-link-mail:active svg{
+.social-link-mail:active svg {
 	outline: none;
 	fill: transparent;
 	stroke: #3172B9;
