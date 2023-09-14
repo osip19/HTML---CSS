@@ -189,15 +189,25 @@ button {
 }
 
 .list-item-card-3 {
+	position: relative;
+	outline: none;
 	background-image: url("../img/card-image-3.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
+.list-item-card-3 .offers__item-link::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
 .offers__sublist {
 	display: flex;
 	flex-direction: column;
-	/* margin-right: 24px; */
 }
 
 .offers__item-title {
