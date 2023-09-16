@@ -1,3 +1,7 @@
+* {
+	/* outline: 1px dotted red; */
+}
+
 body {
 	background-color: #f1f1f1;
 	min-width: 1200px;
@@ -71,11 +75,14 @@ button {
 
 .heading__logo {}
 
-.header-logo-img {
+.header__logo-img {
 	min-width: 261px;
 }
 
+
+
 .tel {
+	position: relative;
 	margin-right: 550px;
 	color: #666;
 	font-family: Muller;
@@ -88,7 +95,7 @@ button {
 	background-repeat: no-repeat;
 	background-position: center left;
 	padding-left: 29px;
-	color: #c93;
+	color: var(--color-golden-brown);
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -99,7 +106,7 @@ button {
 	margin-bottom: 70px;
 	padding: 14px 45px;
 	border-radius: 15px;
-	background: #fff;
+	background: var(--color-white);
 }
 
 .nav__breadcrumbs {
@@ -122,9 +129,9 @@ button {
 
 .nav__feedback {
 	border-radius: 10px;
-	border: 1px solid #C93;
+	border: 1px solid var(--color-golden-brown);
 	padding: 13px 20px;
-	color: #C93;
+	color: var(--color-golden-brown);
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -212,14 +219,14 @@ button {
 
 .offers__item-title {
 	margin-bottom: 15px;
-	color: #FFF;
+	color: var(--color-white);
 	font-size: 40px;
 	font-weight: 700;
 	max-width: 420px;
 }
 
 .offers__list-right .offers__item-title {
-	color: #FFF;
+	color: var(--color-white);
 	font-size: 60px;
 	font-style: normal;
 	font-weight: 700;
@@ -227,7 +234,7 @@ button {
 }
 
 .offers__list-right .offers__item-descr {
-	color: #FFF;
+	color: var(--color-white);
 	font-size: 30px;
 	font-weight: 400;
 }
@@ -243,7 +250,7 @@ button {
 
 .offers__item-descr {
 	margin-bottom: 47px;
-	color: #FFF;
+	color: var(--color-white);
 	font-size: 20px;
 	font-weight: 400;
 	opacity: 0.8;
@@ -265,7 +272,7 @@ button {
 
 .about-us__descr {
 	width: 888px;
-	color: #000;
+	color: var(--color-black);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 200%;
@@ -288,7 +295,7 @@ button {
 	max-width: 573px;
 	border-radius: 15px;
 	overflow: hidden;
-	background-color: #fff;
+	background-color: var(--color-white);
 }
 
 .services__img {
@@ -298,7 +305,7 @@ button {
 .services__title {
 	margin-bottom: 10px;
 	margin-left: 45px;
-	color: #cc9933;
+	color: var(--color-golden-brown);
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 200%;
@@ -310,7 +317,7 @@ button {
 	background-repeat: no-repeat;
 	background-position: center right;
 	padding-right: 22px;
-	color: #C93;
+	color: var(--color-golden-brown);
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 200%;
@@ -320,7 +327,7 @@ button {
 	margin-bottom: 35px;
 	margin-left: 45px;
 	width: 402px;
-	color: #000;
+	color: var(--color-black);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 200%;
@@ -344,7 +351,7 @@ button {
 	min-height: 276px;
 	border-radius: 15px;
 	overflow: hidden;
-	background-color: #fff;
+	background-color: var(--color-white);
 }
 
 .list-opportunity__item:nth-child(-n+4) {
@@ -361,7 +368,7 @@ button {
 	padding-left: 45px;
 	padding-right: 42px;
 	padding-bottom: 32px;
-	color: #000;
+	color: var(--color-black);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 200%;
@@ -370,7 +377,7 @@ button {
 .placement {}
 
 .placement-title {
-	color: #000;
+	color: var(--color-black);
 	font-size: 16px;
 	font-weight: 400;
 	padding-bottom: 16px;
@@ -411,7 +418,7 @@ button {
 .sample-hotel {}
 
 .placement-item {
-	background-color: #fff;
+	background-color: var(--color-white);
 	border-radius: 15px;
 	overflow: hidden;
 }
@@ -433,7 +440,7 @@ button {
 }
 
 .strong {
-	color: #000;
+	color: var(--color-black);
 	font-size: 20px;
 	font-weight: 700;
 
@@ -454,9 +461,9 @@ button {
 	margin-bottom: 45px;
 	align-self: start;
 	border-radius: 10px;
-	border: 1px solid #C93;
+	border: 1px solid var(--color-golden-brown);
 	padding: 13px 20px;
-	color: #C93;
+	color: var(--color-golden-brown);
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -464,9 +471,9 @@ button {
 .all-options {
 	display: inline-block;
 	align-self: flex-end;
-	padding-left: 54px;
+	margin-left: 54px;
 	padding-right: 22px;
-	color: #FFF;
+	color: var(--color-white);
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 200%;
@@ -489,7 +496,7 @@ button {
 
 .legend {
 	margin-bottom: 20px;
-	color: #000;
+	color: var(--color-black);
 	font-size: 40px;
 	font-weight: 400;
 }
@@ -501,7 +508,7 @@ button {
 .booking-fieldset {
 	display: flex;
 	border-radius: 15px;
-	background: #FFF;
+	background: var(--color-white);
 	padding: 32px 28px;
 }
 
@@ -542,13 +549,13 @@ button {
 .booking-legend {
 	display: block;
 	margin-bottom: 15px;
-	color: #000;
+	color: var(--color-black);
 	font-size: 12px;
 	font-weight: 400;
 }
 
 .booking-select {
-	color: #000;
+	color: var(--color-black);
 	font-size: 16px;
 	font-weight: 400;
 	appearance: none;
@@ -566,8 +573,8 @@ button {
 .booking-button {
 	padding: 13px 30px;
 	border-radius: 10px;
-	border: 1px solid #C93;
-	color: #C93;
+	border: 1px solid var(--color-golden-brown);
+	color: var(--color-golden-brown);
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -577,7 +584,7 @@ button {
 .contacts-requisites {}
 
 .address-contact {
-	background-color: #fff;
+	background-color: var(--color-white);
 	border-radius: 15px;
 	padding: 45px;
 	background-image: url(../img/layer.jpg);
@@ -605,7 +612,7 @@ button {
 
 .contacts-link-phone,
 .contacts-link-mail {
-	color: #C93;
+	color: var(--color-golden-brown);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 150%;
@@ -615,7 +622,7 @@ button {
 .phones-title,
 .emails-title,
 .chart-title {
-	color: #000;
+	color: var(--color-black);
 	font-size: 20px;
 	font-weight: 700;
 }
@@ -633,7 +640,7 @@ button {
 }
 
 .address-descr {
-	color: #000;
+	color: var(--color-black);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 150%;
@@ -652,7 +659,7 @@ button {
 }
 
 .chart-descr {
-	color: #000;
+	color: var(--color-black);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 150%;
@@ -669,12 +676,12 @@ button {
 }
 
 .contacts-button {
-	color: #C93;
+	color: var(--color-golden-brown);
 	font-size: 16px;
 	font-weight: 400;
 	padding: 30px;
 	border-radius: 10px;
-	border: 1px solid #C93;
+	border: 1px solid var(--color-golden-brown);
 }
 
 .footer {
@@ -709,7 +716,7 @@ button {
 .footer-img {}
 
 .footer-info__agreement {
-	color: #C93;
+	color: var(--color-golden-brown);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 150%;
@@ -725,7 +732,7 @@ button {
 }
 
 .footer-info__text {
-	color: #FFF;
+	color: var(--color-white);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 190%;
@@ -748,14 +755,14 @@ button {
 }
 
 .footer-contact .footer-info__tel {
-	color: #C93;
+	color: var(--color-golden-brown);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 150%;
 }
 
 .footer-info__mail {
-	color: #C93;
+	color: var(--color-golden-brown);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 150%;
@@ -770,28 +777,201 @@ button {
 	flex-direction: column;
 }
 
-.footer-info__tripadvisor {
-	background: url("../img/tripadvisor.png");
-	display: block;
+.footer-info-link-svg {
+	fill: var(--fill-default);
 	width: 25px;
 	height: 25px;
 }
 
+/* variables */
 
-.footer-info__ok {
-	background: url("../img/ok.png");
-	display: block;
-	width: 25px;
-	height: 25px;
+:root {
+	--color-white: #FFF;
+	--color-black: #000;
+	--color-golden-brown: #C93;
+	--fill-default: #999
 }
 
-.footer-info__vk {
-	background: url("../img/vk.png");
-	display: block;
-	width: 25px;
-	height: 25px;
+/* effects */
+
+.btn:hover {
+	color: var(--color-white);
+	background-color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
 }
 
-* {
-	/* outline: 1px dotted red; */
+.btn:focus-visible {
+	color: var(--color-white);
+	background-color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.btn:active {
+	color: var(--color-white);
+	background-color: #A47312;
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.tel:hover {
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.tel:focus-visible {
+	outline: 1px solid var(--color-golden-brown);
+	outline-offset: 5px;
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.tel:active {
+	color: #A47312;
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.heading__link-account:hover {
+	color: #F0BF5F;
+	background-image: url("../img/keyboard_tab-hover.svg");
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.heading__link-account:focus-visible {
+	outline: 1px solid var(--color-golden-brown);
+	outline-offset: 5px;
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.heading__link-account:active {
+	color: #A47312;
+	background-image: url("../img/keyboard_tab-active.svg");
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+
+.nav__link:hover {
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.nav__link:focus-visible {
+	outline: 1px solid var(--color-golden-brown);
+	outline-offset: 5px;
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.nav__link:active {
+	color: #A47312;
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.contacts-link-phone:hover {
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.contacts-link-phone:focus-visible {
+	outline: 1px solid var(--color-golden-brown);
+	outline-offset: 5px;
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.contacts-link-phone:active {
+	color: #A47312;
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.contacts-link-mail:hover {
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.contacts-link-mail:focus-visible {
+	outline: 1px solid var(--color-golden-brown);
+	outline-offset: 5px;
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.contacts-link-mail:active {
+	color: #A47312;
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.all-options:focus {
+	outline: 1px solid var(--color-golden-brown);
+	outline-offset: 3px;
+}
+
+.footer-info__agreement:hover {
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.footer-info__agreement:focus-visible {
+	outline: 1px solid var(--color-golden-brown);
+	outline-offset: 5px;
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.footer-info__agreement:active {
+	color: #A47312;
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.footer-info__tel:hover {
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.footer-info__tel:focus-visible {
+	outline: 1px solid var(--color-golden-brown);
+	/* outline-offset: 5px; */
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.footer-info__tel:active {
+	color: #A47312;
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.footer-info__mail:hover {
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.footer-info__mail:focus-visible {
+	outline: 1px solid var(--color-golden-brown);
+	/* outline-offset: 5px; */
+	color: var(--color-golden-brown);
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+.footer-info__mail:active {
+	color: #A47312;
+	transition: background 0.3s ease-in-out, color 0.2s linear;
+}
+
+/* доделать соц ссылки!!!!  */
+
+.footer-info-link:hover .footer-info-link-svg {
+	fill: var(--color-golden-brown);
+	transition: fill 0.3s ease-in-out;
+}
+
+.footer-info-link:focus-visible .footer-info-link-svg {
+	fill: var(--color-golden-brown);
+	transition: fill 0.3s ease-in-out;
+}
+.footer-info-link:focus {
+	outline: 0;
+}
+
+.footer-info-link:active .footer-info-link-svg {
+	fill: #A47312;
+	transition: fill 0.3s ease-in-out;
 }
