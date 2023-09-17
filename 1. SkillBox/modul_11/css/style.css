@@ -179,7 +179,7 @@ button {
 	min-width: 573px;
 	min-height: 258px;
 	border-radius: 15px;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 
@@ -199,12 +199,10 @@ button {
 
 .list-item-card-3 {
 	position: relative;
-	/* outline: none; */
 	background-image: url("../img/card-image-3.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	/* outline: 1px solid #F0BF5F; */
 }
 
 .list-item-card-3 .offers__item-link::after {
@@ -994,10 +992,6 @@ button {
 	transition: padding 0.3s ease-in-out;
 }
 
-.offers__item-link:focus-visible {
-	outline: none;
-}
-
 .offers__item-link:active {
 	color: var(--color-white);
 	padding-right: 22px;
@@ -1024,20 +1018,15 @@ button {
 }
 
 /* если ниже добавить (:not(:hover)) пропадает псевдоэлемент ::after */
-
-.offers__item-link::after {
+.offers__item-link:focus-visible{
+	outline: none;
+}
+.offers__item-link:focus-visible::after {
 	content: '';
 	position: absolute;
 	top: -8px;
+	left: -8px;
 	right: -8px;
 	bottom: -8px;
-	left: -8px;
-	border-radius: 0;
-	border: 5px solid red;
-	outline: none;
-	opacity: 0;
-}
-
-.offers__item-link:focus-visible::after {
-	opacity: 1;
+	outline: 1px solid #F0BF5F;
 }
