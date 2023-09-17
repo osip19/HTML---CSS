@@ -293,11 +293,12 @@ button {
 }
 
 .services__item {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	max-width: 573px;
 	border-radius: 15px;
-	overflow: hidden;
+	/* overflow: hidden; */
 	background-color: var(--color-white);
 }
 
@@ -997,6 +998,22 @@ button {
 	padding-right: 22px;
 }
 
+
+/* если ниже добавить (:not(:hover)) пропадает псевдоэлемент ::after */
+.offers__item-link:focus-visible {
+	outline: none;
+}
+
+.offers__item-link:focus-visible::after {
+	content: '';
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	right: -8px;
+	bottom: -8px;
+	outline: 1px solid #F0BF5F;
+}
+
 .services__card:hover {
 	color: #F0BF5F;
 	margin-right: 33px;
@@ -1008,20 +1025,11 @@ button {
 	transition: stroke 0.3s ease-in-out
 }
 
-.services__card:focus {
-	/* content: '';
-	position: absolute;
-	top: -3px;
-	left: -3px;
-	right: -3px;
-	bottom: -3px; */
-}
-
-/* если ниже добавить (:not(:hover)) пропадает псевдоэлемент ::after */
-.offers__item-link:focus-visible{
+.services__card:focus-visible {
 	outline: none;
 }
-.offers__item-link:focus-visible::after {
+
+.services__card:focus-visible::after {
 	content: '';
 	position: absolute;
 	top: -8px;
@@ -1029,4 +1037,16 @@ button {
 	right: -8px;
 	bottom: -8px;
 	outline: 1px solid #F0BF5F;
+}
+
+.services__card:active {
+	color: #A47312;
+	transition: color 0.3s ease-in-out;
+	margin-right: 2px;
+	transition: margin 0.3s ease-in-out;
+}
+
+.services__title:not(:focus):active>svg {
+	stroke: #A47312;
+	transition: stroke 0.3s ease-in-out;
 }
