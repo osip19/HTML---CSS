@@ -1,5 +1,4 @@
 /* own styles */
-
 .html {
 	box-sizing: border-box;
 }
@@ -72,7 +71,6 @@ select {
 }
 
 /* root */
-
 :root {
 	--orange-default: #ff9900;
 	--orange-hover-focus: #ffb84d;
@@ -84,7 +82,6 @@ select {
 }
 
 /* fonts */
-
 @font-face {
 	font-family: 'Montserrat';
 	src: local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.woff2) format("woff2");
@@ -131,7 +128,6 @@ select {
 }
 
 /* basic */
-
 .header {
 	border-radius: 0px 0px 32px 32px;
 	background: #FFF;
@@ -195,8 +191,6 @@ select {
 .breadcrumb__search:focus {
 	outline: none;
 }
-
-
 
 .breadcrumb__search:focus-visible svg {
 	outline: 2px solid var(--orange-hover-focus);
@@ -292,22 +286,18 @@ select {
 /* .slogan__btn {
 	background-color: var(--orange-default);
 }
-
 .slogan__btn:hover {
 	background-color: var(--orange-hover-focus);
 	border: 3px solid var(--orange-hover-focus);
 }
-
 .slogan__btn:focus-visible {
 	background-color: var(--orange-hover-focus);
 	border: 3px solid var(--orange-hover-focus);
 }
-
 .slogan__btn:active {
 	background-color: var(--orange-activ);
 	border: 3px solid var(--orange-activ);
 } */
-
 .btn-general {
 	padding: 19px 38px;
 	border-radius: 16px;
@@ -637,7 +627,6 @@ legal-information__social {}
 
 .legal-information__social-link:hover svg {
 	fill: var(--orange-default);
-
 }
 
 .legal-information__social-link:focus {
@@ -707,7 +696,6 @@ legal-information__social {}
 .form__general:active {
 	background-color: var(--black-hover-focus);
 	color: #FFF;
-
 }
 
 .form__input {}
