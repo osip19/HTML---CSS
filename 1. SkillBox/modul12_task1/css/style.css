@@ -48,8 +48,9 @@ svg {
 }
 
 .container {
-	max-width: 1770px;
+	width: 1770px;
 	margin: 0 auto;
+	outline: 1px dashed rgb(0, 0, 255);
 }
 
 h1,
@@ -162,7 +163,7 @@ select {
 }
 
 .header__compass-svg {
-	padding-right: 12.16px;
+	padding-right: 6px;
 }
 
 .header__heading-svg {}
@@ -767,5 +768,5 @@ legal-information__social {}
 }
 
 * {
-	/* outline: 1px dotted red; */
+	/* outline: 1px solid blue; */
 }
