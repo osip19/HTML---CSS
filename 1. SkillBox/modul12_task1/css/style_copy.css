@@ -48,9 +48,19 @@ svg {
 }
 
 .container {
-	width: 1741px;
+	/* max-width: 1770px;
 	margin: 0 auto;
-	/* outline: 1px dashed rgb(0, 0, 255); */
+	outline: 1px dashed rgb(0, 0, 255); */
+}
+
+.header .container {
+	max-width: 1770px;
+	margin: 0 auto;
+	outline: 1px dashed rgb(0, 0, 255);
+	border-radius: 0px 0px 32px 32px;
+	background: #FFF;
+	box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.10);
+	margin-bottom: 50px;
 }
 
 h1,
@@ -130,10 +140,10 @@ select {
 
 /* basic */
 .header {
-	border-radius: 0px 0px 32px 32px;
+	/* border-radius: 0px 0px 32px 32px;
 	background: #FFF;
 	box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.10);
-	margin-bottom: 47px;
+	margin-bottom: 50px; */
 }
 
 .header__nav {
@@ -174,12 +184,10 @@ select {
 	display: flex;
 }
 
-.breadcrumb__item {
-	padding-top: 4px;
-}
+.breadcrumb__item {}
 
 .breadcrumb__item:not(:last-child) {
-	margin-right: 82px;
+	margin-right: 85px;
 }
 
 .breadcrumb__link {
@@ -204,7 +212,7 @@ select {
 
 .breadcrumb__item:hover {
 	border-bottom: 2px solid var(--orange-hover-focus);
-	padding-bottom: 3px;
+	padding-bottom: 5px;
 }
 
 .breadcrumb__item:last-child:hover {
@@ -223,7 +231,7 @@ select {
 
 .breadcrumb__link:active:not(:focus-visible) {
 	border-bottom: 2px solid var(--orange-activ);
-	padding-bottom: 3px;
+	padding-bottom: 5px;
 	color: var(--orange-activ);
 }
 
@@ -257,35 +265,33 @@ select {
 .main {}
 
 .slogan {
-	margin-bottom: 48px;
+	margin-bottom: 50px;
 }
 
 .slogan__container {
-	padding-left: 78px;
+	padding-left: 80px;
 	background-image: url("../img/low-angle-photo-of-balconies-24620151.jpg");
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	object-fit: cover;
 	border-radius: 32px;
-	height: 612px;
+	height: 620px;
 }
 
 .slogan__main-title {
-	padding-top: 98px;
-	padding-bottom: 21px;
+	padding-top: 100px;
+	padding-bottom: 24px;
 	width: 837px;
 	color: #FFF;
 	font-size: 70px;
 	font-weight: 800;
-	letter-spacing: .15px;
 }
 
 .slogan__desc {
-	padding-bottom: 88px;
+	padding-bottom: 115px;
 	width: 837px;
 	color: #FFF;
 	font-size: 24px;
 	font-weight: 700;
-	letter-spacing: -.22px;
 }
 
 /* .slogan__btn {
@@ -304,12 +310,12 @@ select {
 	border: 3px solid var(--orange-activ);
 } */
 .btn-general {
-	padding: 24px 35px;
+	padding: 19px 38px;
 	border-radius: 16px;
 	border: 3px solid #F90;
 	color: #FFF;
 	text-align: center;
-	font-size: 23px;
+	font-size: 16px;
 	font-weight: 700;
 }
 
@@ -317,12 +323,9 @@ select {
 
 .about-us {
 	margin-bottom: 100px;
-	letter-spacing: -.4px;
 }
 
-.about-us__title {
-	padding-bottom: 19px;
-}
+.about-us__title {}
 
 .section-title {
 	color: #000;
@@ -336,8 +339,7 @@ select {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 32px;
-	margin-bottom: 48px;
-	letter-spacing: -0.15px;
+	margin-bottom: 50px;
 }
 
 .statement {
