@@ -1,0 +1,156 @@
+.questions {
+  margin-bottom: 101px;
+}
+
+.questions__title {
+  margin-bottom: 36px;
+}
+
+.questions__content {
+  max-width: 1772px;
+}
+
+.questions__list {
+  display: flex;
+  gap: 32px;
+}
+
+.questions__item {
+  max-width: 568px;
+  padding: 59px 58px;
+  border: 1px solid var(--light-grey);
+  border-radius: 32px;
+}
+
+.questions__item-subtitle {
+  max-width: 412px;
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--black);
+}
+
+.questions__item-descr {
+  max-width: 450px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--black);
+}
+
+/* Adaptive */
+
+@media (max-width: 1600px) {
+  .questions {
+    margin-bottom: 76px;
+  }
+
+  .questions__container {
+    padding: 0 50px;
+  }
+
+  .questions__title {
+    margin-bottom: 30px;
+  }
+
+  .questions__list {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .questions__item {
+    padding: 67px 59px;
+    max-width: 100%;
+    min-height: 231px;
+  }
+
+  .questions__item-subtitle {
+    margin: 0;
+    margin-bottom: 6px;
+    max-width: 799px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .questions__item-descr {
+    margin: 0;
+    max-width: 799px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: calc(1024px - 1px)) {
+  .questions {
+    margin-bottom: 76px;
+  }
+
+  .questions__list {
+    gap: 25px;
+  }
+
+  .questions__item {
+    padding: 36px 40px;
+    max-width: 100%;
+    min-height: 163px;
+  }
+
+  br {
+    display: inline;
+  }
+}
+
+@media (max-width: calc(768px - 1px)) {
+  .questions__container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .questions {
+    margin-bottom: 58px;
+  }
+
+  .questions__container {
+    padding: 0 15px;
+  }
+
+  .questions__title {
+    padding: 0;
+    margin-bottom: 18px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .questions__item {
+    min-height: 112px;
+    padding: 0;
+    border: none;
+  }
+
+  .questions__item:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  .questions__item-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .questions__item-descr {
+    max-width: 257px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  br {
+    display: none;
+  }
+}

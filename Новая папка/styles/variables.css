@@ -1,0 +1,15 @@
+:root {
+  --white: #ffffff;
+
+  --black: #000000;
+  --light-black: #414141;
+  --dark-grey: #666666;
+  --light-grey: #cacaca;
+  --shadow: rgba(0, 0, 0, 0.5);
+
+  --orange: #ff9900;
+  --orange-hover: #ffb84d;
+  --orange-active: #e1670e;
+
+  --lime: #97ee3f;
+}
