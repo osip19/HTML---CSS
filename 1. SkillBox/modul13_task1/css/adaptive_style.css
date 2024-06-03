@@ -1,0 +1,41 @@
+@media (max-width: 3840px) {
+	.container {
+		max-width: 1770px;
+	}
+
+	.about-us__desc {
+		width: 100%;
+	}
+
+	.about-us__desc p {
+		text-align: justify;
+	}
+}
+
+@media (max-width: 1920px) {
+	.container {
+		max-width: calc(100vw - 25vw);
+	}
+
+	.breadcrumb__item:not(:last-child) {
+		margin-right: 35px;
+	}
+
+	.statement {
+		display: block
+	}
+
+	.stages__list {
+		display: block;
+	}
+
+	questions__item {
+		gap: 9px;
+	}
+}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 320px) {}
