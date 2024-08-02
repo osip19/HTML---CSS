@@ -480,8 +480,6 @@ select {
 	line-height: 32px;
 }
 
-
-
 .btn-general:hover {
 	background-color: var(--orange-hover-focus);
 	border: 3px solid var(--orange-hover-focus);
@@ -799,5 +797,5 @@ legal-information__social {}
 }
 
 * {
-	/* outline: 1px dotted red; */
+	outline: 1px dotted red;
 }

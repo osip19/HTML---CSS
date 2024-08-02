@@ -1,11 +1,130 @@
 /* ТЕПЕРЬ НАДО СДЕЛАТЬ АДАПТИВ + ПП */
 
-@media (max-width: 1024px) {}
+/* @media (max-width: 1920px) {
+	.container {
+		max-width: 1820px;
+		margin: 0 auto;
 
-@media (max-width: 896px) {}
+	}
+} */
 
-@media (max-width: 768px) {}
+/* @media (max-width: 1472px) {
+	.container {
+		max-width: 924px;
+		margin: 0 auto;
+	}
+} */
 
-@media (max-width: 545px) {}
+@media (max-width: 1024px) {
 
-@media (max-width: 320px) {}
+	.container {
+		outline: auto;
+		max-width: 924px;
+		margin: 0 auto;
+	}
+
+	.header__formated {
+		.breadcrumb__item:not(:last-child) {
+			margin-right: 60px;
+		}
+	}
+
+	.slogan {
+		margin-bottom: 35px;
+	}
+
+	.slogan__container {
+		background-image: url(../img/low-angle-photo-of-balconies-2462015_1.jpg);
+		padding-left: 77px;
+		height: 668px;
+	}
+
+	.slogan__main-title {
+		padding-top: 160px;
+		padding-bottom: 16px;
+		width: 770px;
+		font-size: 60px;
+	}
+
+	.slogan__desc {
+		padding-bottom: 60px;
+	}
+
+	.slogan__btn {
+		margin-bottom: 100px;
+	}
+
+	.about-us__desc {
+		width: 100%;
+		margin-bottom: 60px;
+	}
+
+	.statement {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.statement__list_left {
+		height: 640px;
+		width: 924px;
+		background-image: url(../img/Rectangle\ 2.jpg);
+	}
+
+	.statement__btn {
+		padding-bottom: 68px;
+	}
+
+	.about-us {
+		margin-bottom: 77px;
+	}
+
+	.about-us__btn {
+		padding: 19px 38px;
+	}
+
+	.statement__list-another {
+		width: 100%;
+	}
+
+	.stages__list {
+		display: flex;
+		gap: 50px;
+	}
+
+	.stages__item_right {
+		
+	}
+
+	.stages__images {
+		display: none;
+	}
+
+}
+
+/* @media (max-width: 896px) {
+	.container {
+		max-width: 924px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 668px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 545px) {
+	.container {
+		max-width: 924px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 320px) {
+	.container {
+		max-width: 924px;
+		margin: 0 auto;
+	}
+} */
