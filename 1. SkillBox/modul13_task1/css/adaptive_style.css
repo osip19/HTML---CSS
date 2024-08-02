@@ -1,9 +1,11 @@
 /* ТЕПЕРЬ НАДО СДЕЛАТЬ АДАПТИВ + ПП */
 
-@media (max-width: 3840px) {}
-
 @media (max-width: 1024px) {}
 
+@media (max-width: 896px) {}
+
 @media (max-width: 768px) {}
+
+@media (max-width: 545px) {}
 
 @media (max-width: 320px) {}
