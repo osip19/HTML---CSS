@@ -88,20 +88,38 @@
 
 	.stages__list {
 		display: flex;
-		gap: 50px;
+		position: relative;
+		/* gap: 50px; */
+	}
+
+	.stages__item {
+		width: 437px;
 	}
 
 	.stages__item_right {
-		
+		margin-left: 50px;
 	}
 
 	.stages__images {
 		display: none;
+
 	}
 
-}
+	.stages__item_right::after {
+		content: "";
+		position: absolute;
+		width: 50%;
+		bottom: 0;
+		right: 0;
+		top: 0;
+		background-image: url("../img/rectangle-18.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 32px;
+	}
 
-/* @media (max-width: 896px) {
+	/* @media (max-width: 896px) {
 	.container {
 		max-width: 924px;
 		margin: 0 auto;
