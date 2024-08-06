@@ -15,17 +15,15 @@
 	}
 } */
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
 
 	.container {
 		max-width: 924px;
 		margin: 0 auto;
 	}
 
-	.header__formated {
-		.breadcrumb__item:not(:last-child) {
-			margin-right: 60px;
-		}
+	.breadcrumb__item:not(:last-child) {
+		margin-right: 60px;
 	}
 
 	.header__compass-svg,
@@ -33,7 +31,7 @@
 		display: none;
 	}
 
-	..header__main-title {
+	.header__main-title {
 		position: relative;
 	}
 
@@ -204,7 +202,7 @@
 	.comment__desc {
 		display: none;
 	}
-}
+} */
 
 /* @media (max-width: 896px) {
 		.container {
@@ -217,9 +215,107 @@
 	.container {
 		max-width: 668px;
 		margin: 0 auto;
+		outline: auto;
 	}
 
+	.breadcrumb__item:not(:last-child) {
+		margin-right: 40px;
+	}
+
+	.breadcrumb__link {
+		font-size: 16px;
+	}
+
+	.header__compass-svg,
+	.header__heading-svg {
+		display: none;
+	}
+
+	.header__nav {
+		position: relative;
+	}
+
+	.header__main-title::after {
+		content: "";
+		position: absolute;
+		width: 110px;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		background-image: url(../img/Logo768.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left;
+	}
+
+	.slogan__container {
+		padding: 0;
+		width: 100%;
+		background-image: url(../img/low-angle-photo-of-balconies-2462015_768.png);
+		background-size: cover;
+	}
+
+	.slogan__main-title {
+		width: calc(100% - 80px);
+		font-size: 50px;
+		padding: 160px 40px 10px 40px;
+	}
+
+	.slogan__desc {
+		width: calc(100% - 80px);
+		padding: 0 40px 60px 40px;
+		font-size: 18px;
+	}
+
+	.slogan__btn {
+		margin-left: 40px;
+	}
+
+	.about-us__desc {
+		width: 100%;
+	}
+
+	.statement {
+		display: block;
+	}
+
+	.statement__list {
+		width: 100%;
+	}
+
+	.statement__list-another {
+		padding: 0;
+		margin: 0;
+	}
+
+	.statement__div {
+		padding: 0;
+		margin: 0;
+	}
+
+	.statement__list_left {
+		width: 100%;
+	}
+
+	.statement__list_left>div {
+		padding-top: 34px;
+	}
+
+	.statement__desc {
+		margin-right: 45px;
+		padding: 0 0 34px 40px;
+	}
+
+
+
+
+
+
+
 }
+
+
+
 
 /* @media (max-width: 545px) {
 	.container {
