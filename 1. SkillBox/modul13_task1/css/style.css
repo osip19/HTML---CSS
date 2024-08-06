@@ -331,6 +331,14 @@ select {
 	margin-bottom: 100px;
 }
 
+.br-hidden {
+	display: none;
+}
+
+.br-hidden-second{
+	display: none;
+}
+
 .about-us__title {
 	padding-bottom: 21px;
 }
@@ -394,6 +402,14 @@ select {
 	line-height: 32px;
 }
 
+.statement__desc-another {
+	padding-left: 0;
+	color: #000;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+}
+
 .statement__btn {
 	padding-bottom: 67px;
 	padding-right: 50px;
@@ -452,14 +468,6 @@ select {
 	padding-top: 65px;
 	margin-bottom: 8px;
 	font-size: x-large;
-}
-
-.statement__desc-another {
-	padding-left: 0;
-	color: #000;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 32px;
 }
 
 .stages {

@@ -15,7 +15,12 @@
 	}
 } */
 
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+
+
+	.br-hidden {
+		display: block;
+	}
 
 	.container {
 		max-width: 924px;
@@ -187,8 +192,8 @@
 	}
 
 	.footer__button {
-		padding-left: 52px;
-		padding-right: 52px;
+		padding-left: 37.5px;
+		padding-right: 37.5px;
 		padding-top: 19px;
 		padding-bottom: 19px;
 		margin-right: 22px;
@@ -202,7 +207,7 @@
 	.comment__desc {
 		display: none;
 	}
-} */
+}
 
 /* @media (max-width: 896px) {
 		.container {
@@ -215,7 +220,10 @@
 	.container {
 		max-width: 668px;
 		margin: 0 auto;
-		outline: auto;
+	}
+
+	.about-us {
+		margin-bottom: 80px;
 	}
 
 	.breadcrumb__item:not(:last-child) {
@@ -286,11 +294,13 @@
 	.statement__list-another {
 		padding: 0;
 		margin: 0;
+		height: 100%;
+		width: 100%;
 	}
 
 	.statement__div {
-		padding: 0;
-		margin: 0;
+		padding: 0 46px 0 170px;
+		margin-top: 32px;
 	}
 
 	.statement__list_left {
@@ -301,10 +311,89 @@
 		padding-top: 34px;
 	}
 
-	.statement__desc {
-		margin-right: 45px;
-		padding: 0 0 34px 40px;
+
+	.statement__btn {
+		padding-right: 40px;
 	}
+
+	.first-paragraph,
+	.second-paragraph {
+		background-position: 40px center;
+		background-size: 114px 99px;
+	}
+
+	.statement__title {
+		padding-top: 35px;
+	}
+
+	.statement__desc {
+		padding-bottom: 40px;
+	}
+
+	.stages__item_right::after {
+		visibility: hidden;
+	}
+
+	.stages__item {
+		width: 100%;
+	}
+
+	.stages__item_right {
+		padding: 0;
+		margin: 0;
+	}
+
+	.stages__images {
+		display: block;
+		width: 100%;
+		max-height: 284px;
+		padding-top: 32px;
+	}
+
+	.stages__list {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.stages {
+		padding-bottom: 80px;
+	}
+
+	.questions__list {}
+
+	.questions-item {
+		padding: 35px 65px 35px 40px;
+		width: calc(100% - 65px - 40px);
+	}
+
+	.footer__list {
+		flex-direction: column-reverse;
+	}
+
+	.legal-information__item:first-child {
+		padding-bottom: 6px;
+	}
+
+	.legal-information__item:not(:first-child) {
+		display: none;
+	}
+
+	.legal-information__div {
+		padding-top: 10px;
+	}
+
+	.legal-information__item {
+		padding-top: 50px;
+		padding-bottom: 16px;
+	}
+
+	.footer__form {
+		width: 541px;
+
+	}
+
+
+
 
 
 
