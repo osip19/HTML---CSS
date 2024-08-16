@@ -191,7 +191,7 @@ select {
 }
 
 .breadcrumb__item {
-	padding-top: 3px;
+	/* padding-top: 3px; */
 }
 
 .breadcrumb__item:not(:last-child) {
@@ -220,7 +220,7 @@ select {
 
 .breadcrumb__item:hover {
 	border-bottom: 2px solid var(--orange-hover-focus);
-	padding-bottom: 5px;
+	padding-bottom: 4px;
 }
 
 .breadcrumb__item:last-child:hover {
@@ -805,5 +805,5 @@ legal-information__social {}
 }
 
 * {
-	outline: 1px dotted red;
+	/* outline: 1px dotted red; */
 }
