@@ -31,31 +31,28 @@
 		margin-right: 60px;
 	}
 
-	.header__compass-svg,
-	.header__heading-svg {
+	.header__compass-svg {
 		display: none;
 	}
 
-	.header__main-title {
-		position: relative;
-	}
-
-	.header__main-title::after {
-		content: "";
-		position: absolute;
-		width: 14.6485%;
-		height: 9.163%;
-		bottom: 0;
-		top: 17px;
-		background-image: url("../img/Logo1024.svg");
-		background-size: contain;
-		background-position: left;
-		background-repeat: no-repeat;
+	.header__heading-svg {
+		display: none;
 	}
 
 	.header__nav {
 		padding-top: 26px;
 		padding-bottom: 26px;
+	}
+
+	.header__nav::after {
+		content: "";
+		position: absolute;
+		background-image: url(../img/Logo1024.svg);
+		width: 150px;
+		height: 48px;
+		background-size: contain;
+		background-position: center left;
+		background-repeat: no-repeat;
 	}
 
 	.slogan {
@@ -209,11 +206,8 @@
 	}
 }
 
-/* @media (max-width: 896px) {
-		.container {
-		max-width: 924px;
-		margin: 0 auto;
-	}
+/* @media (max-width: 780px) {
+		.container {}
 }*/
 
 @media (max-width: 768px) {
@@ -311,7 +305,6 @@
 		padding-top: 34px;
 	}
 
-
 	.statement__btn {
 		padding-right: 40px;
 	}
@@ -392,6 +385,62 @@
 
 	}
 
+}
+
+/* @media (max-width: 545px) {
+	.container {
+		max-width: 924px;
+		margin: 0 auto;
+	}
+} */
+
+@media (max-width: 320px) {
+
+
+	.container {
+		max-width: 290px;
+		margin: 0 auto;
+	}
+
+	.header__compass-svg,
+	.header__heading-svg {
+		display: none;
+	}
+
+	.header__compass-svg,
+	.header__heading-svg {
+		display: none;
+	}
+
+	.header__nav {
+		position: relative;
+	}
+
+	.header__main-title::after {
+		content: "";
+		position: absolute;
+		width: 110px;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		background-image: url(../img/Logo768.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left;
+	}
+
+	.breadcrumb {
+		overflow: scroll;
+	}
+
+	.breadcrumb__item:not(:last-child) {
+		margin-right: 24px;
+	}
+
+
+	.breadcrumb__link {
+		font-weight: 700;
+	}
 
 
 
@@ -402,20 +451,3 @@
 
 
 }
-
-
-
-
-/* @media (max-width: 545px) {
-	.container {
-		max-width: 924px;
-		margin: 0 auto;
-	}
-} */
-
-/* @media (max-width: 320px) {
-	.container {
-		max-width: 924px;
-		margin: 0 auto;
-	}
-} */
