@@ -60,6 +60,7 @@ svg {
 .container {
 	max-width: 1770px;
 	margin: 0 auto;
+		outline: 1px dotted red;
 }
 
 h1,
@@ -191,7 +192,7 @@ select {
 }
 
 .breadcrumb__item {
-	padding-top: 3px;
+	/* padding-top: 3px; */
 }
 
 .breadcrumb__item:not(:last-child) {
@@ -220,7 +221,7 @@ select {
 
 .breadcrumb__item:hover {
 	border-bottom: 2px solid var(--orange-hover-focus);
-	padding-bottom: 5px;
+	padding-bottom: 4px;
 }
 
 .breadcrumb__item:last-child:hover {
