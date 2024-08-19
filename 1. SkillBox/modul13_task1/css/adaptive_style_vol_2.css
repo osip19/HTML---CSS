@@ -1,0 +1,109 @@
+@media (max-width: 768px) {
+	.container {
+		max-width: 668px;
+		margin: 0 auto;
+		transition: 0.3s;
+	}
+
+	.slogan__container {
+		padding-left: 40px;
+		height: 662px;
+		background-image: url(../img/img/photo-of-balconies-full.jpg);
+		background-size: auto 100%;
+
+	}
+
+
+	.slogan__main-title {
+		font-family: Montserrat;
+		font-size: 50px;
+		font-weight: 800;
+		line-height: 60.95px;
+		width: auto;
+		text-align: left;
+		padding: 160px 0 16px
+	}
+
+	.slogan__desc {
+		font-family: Montserrat;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 21.94px;
+		width: auto;
+		padding-bottom: 60px;
+	}
+
+	.slogan__btn {
+		align-self: flex-start;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 320px) {
+	.container {
+		max-width: 290px;
+		margin: 0 auto;
+		transition: 0.3s;
+	}
+
+	.slogan__container {
+		max-width: 77.2vw;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		height: auto;
+		transition: 0.3s;
+		background-image: url(../img/img/photo-of-balconies-full.jpg);
+	}
+
+
+
+	.slogan__main-title {
+		font-family: Montserrat;
+		font-size: 20px;
+		font-weight: 800;
+		line-height: 24.38px;
+		text-align: center;
+		padding-top: 60px;
+		padding-bottom: 6px;
+		width: auto;
+	}
+
+	.slogan__desc {
+		font-family: Montserrat;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 14.63px;
+		text-align: center;
+		width: auto;
+		padding-bottom: 32px;
+	}
+
+	.slogan__btn {
+		padding: 0;
+		font-family: Montserrat;
+		font-size: 12px;
+		line-height: 14.63px;
+		width: 162px;
+		margin-bottom: 59px;
+		align-self: center;
+
+	}
+
+}
